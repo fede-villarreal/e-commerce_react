@@ -1,0 +1,27 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242423;
+}
+.navBar__logo{
+    width: 10rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.navBar__menu{
+    display: flex;
+    list-style: none;
+}
+.navBar__menu--li{
+    margin: 1rem;
+    color: #ff0099;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.navBar__menu--li a{
+    text-decoration: none;
+    color: inherit;
+}
