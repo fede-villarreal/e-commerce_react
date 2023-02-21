@@ -1,0 +1,18 @@
+.cartWidget {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        width: 3rem;
+        height: auto;
+        margin: 0.5rem;
+    }
+
+    &__p {
+        color: #ff0099;
+        font-weight: bold;
+        font-size: 2em;
+    }
+}

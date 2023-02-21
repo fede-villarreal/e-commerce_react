@@ -1,16 +1,26 @@
-import "./NavBar.css"
-import CartWidget from "../CartWidget/CartWidget"
-export default function NavBar () {
+import CartWidget from "../CartWidget/CartWidget";
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import { NavLink } from "react-router-dom";
+
+export default function NavBar() {
     return (
         <nav className="navBar">
-            <img className="navBar__logo" alt="Logo e-commerce" src="./multimedia/e-commerce_logo.jpeg" />
-            <ul className="navBar__menu">
-                <li className="navBar__menu--li"><a href="">Productos</a></li>
-                <li className="navBar__menu--li"><a href="">Filtrar</a></li>
-                <li className="navBar__menu--li"><a href="">Buscar</a></li>
-                <li className="navBar__menu--li"><a href="">Contacto</a></li>
+            <NavLink to="/"><img className="navBar__logo" alt="Logo e-commerce" src="/multimedia/e-commerce_logo.jpeg" /></NavLink>
+            <ul className="navBar__menu mt-3 mb-3">
+                <li className="navBar__menu--li"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/">Products</NavLink></li>
+                <li className="navBar__menu--li">
+                    <DropdownButton variant="secondary" id="dropdown-basic-button" title="Filter">
+                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/">All</NavLink></Dropdown.Item>
+                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/audio">Headset</NavLink></Dropdown.Item>
+                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/input">Inputs</NavLink></Dropdown.Item>
+                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/screen">Screen</NavLink></Dropdown.Item>
+                    </DropdownButton>
+                </li>
+                <li className="navBar__menu--li"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/search">Search</NavLink></li>
+                <li className="navBar__menu--li"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/contact">Contact</NavLink></li>
             </ul>
-            <CartWidget/>
+            <CartWidget />
         </nav>
     )
 }

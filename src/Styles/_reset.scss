@@ -1,0 +1,34 @@
+/* RESETEO CSS */
+:root{
+    --bs-link-color: inherit;
+    --bs-link-hover-color: inherit;
+} /* Quite el color azul de Bootstrap en los links */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    line-height: 1.4;
+}
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    margin-bottom: 0;
+} /* Quita un margen inferior que da Bootstrap en algunos P como links */
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    color: inherit;
+}

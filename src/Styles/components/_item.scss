@@ -1,0 +1,9 @@
+.item{
+    margin: 2rem;
+    text-align: center;
+    &__image{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+}
