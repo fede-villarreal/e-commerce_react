@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../data/products";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
-import ItemCounts from "../../components/ItemCounts/ItemCounts";
 
 const ItemDetailContainer = () => {
 
@@ -10,27 +9,26 @@ const ItemDetailContainer = () => {
 
   const [detailProduct, setDetailProduct] = useState({});
 
-  const getProduct = new Promise ( (resolve, reject) => {
-    setTimeout ( () => {
-      const findProduct = products.find ( element => element.id === Number(id) )
+  const getProduct = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const findProduct = products.find(element => element.id === Number(id))
       resolve(findProduct)
-    }, 2000 )
-  } )
+    }, 2000)
+  })
 
-  useEffect ( () => {}, [
+  useEffect(() => {
     getProduct
-      .then( (response) => {
+      .then((response) => {
         setDetailProduct(response)
-      } )
-      .catch( (error) => {console.log(error)} )
-  ] )
+      })
+      .catch((error) => { console.log(error) })
+  } )
 
   return (
     <div>
       <ItemDetail detail={detailProduct} />
-      < ItemCounts stock={detailProduct.stock} />
     </div>
-    
+
   )
 }
 

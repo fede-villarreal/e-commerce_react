@@ -6,4 +6,10 @@
         height: 150px;
         object-fit: contain;
     }
+    &__button{
+        background-color: $colorFondoNavbar;
+        color: $colorTextoNavbar;
+        font-weight: bold;
+        font-size: 1em;
+    }
 }
