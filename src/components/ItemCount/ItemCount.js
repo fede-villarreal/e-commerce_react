@@ -16,7 +16,7 @@ const ItemCount = ({stock, counter, setCounter}) => {
     }
 
     const onSubtract = () => {
-        if(counter !== 0){
+        if(counter !== 1){
             setCounter(counter-1)
         }
     }

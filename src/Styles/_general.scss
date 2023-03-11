@@ -3,3 +3,11 @@ body{
     color: $colorTexto;
     text-align: center;
 }
+.button__style{
+    background-color: $colorFondoNavbar;
+    color: $colorTextoNavbar;
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    margin: 1rem auto;
+}

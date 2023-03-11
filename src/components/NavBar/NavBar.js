@@ -11,10 +11,10 @@ export default function NavBar() {
                 <li className="navBar__menu--li"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/">Products</NavLink></li>
                 <li className="navBar__menu--li">
                     <DropdownButton variant="secondary" id="dropdown-basic-button" title="Filter">
-                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/">All</NavLink></Dropdown.Item>
-                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/audio">Headset</NavLink></Dropdown.Item>
-                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/input">Inputs</NavLink></Dropdown.Item>
-                        <Dropdown.Item className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/screen">Screen</NavLink></Dropdown.Item>
+                        <Dropdown.Item as="button" className="dropdownItem"><NavLink className={ ({isActive}) => isActive ? "active navLink" : "navLink"} to="/">All</NavLink></Dropdown.Item>
+                        <Dropdown.Item as="button" className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/audio">Headset</NavLink></Dropdown.Item>
+                        <Dropdown.Item as="button" className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/input">Inputs</NavLink></Dropdown.Item>
+                        <Dropdown.Item as="button" className="dropdownItem"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/category/screen">Screen</NavLink></Dropdown.Item>
                     </DropdownButton>
                 </li>
                 <li className="navBar__menu--li"><NavLink className={({isActive}) => isActive ? "active navLink" : "navLink"} to="/search">Search</NavLink></li>
