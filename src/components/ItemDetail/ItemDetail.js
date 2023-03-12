@@ -22,6 +22,7 @@ const ItemDetail = ({ detail }) => {
             <ItemCount stock={detail.stock} counter={counter} setCounter={setCounter} />
             <div>
                 <Button className="button__style" onClick={() => addItem( detail, counter )} variant="outline-dark">Agregar al Carrito</Button>
+                <Button className="button__style" onClick={() => navigate("/")} variant="outline-dark">Seguir Comprando</Button>
                 <Button className="button__style" onClick={() => navigate("/cart")} variant="outline-dark">Terminar Compra</Button>
             </div>
         </div>
