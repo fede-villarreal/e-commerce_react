@@ -23,7 +23,7 @@ const ItemCount = ({stock, counter, setCounter}) => {
 
     return (
         <ButtonGroup className="count" aria-label="Button Counts">
-            <Button onClick={onSubtract} variant="secondary">-</Button>
+            <Button disabled={counter === 0} onClick={onSubtract} variant="secondary">-</Button>
             <p className="count__text" >{counter}</p>
             <Button onClick={onAdd} variant="secondary">+</Button>
         </ButtonGroup>

@@ -1,3 +1,5 @@
+/* Lista de productos original, fue reemplazada por una lista creada en Firebase */
+
 export const products = [
     {
         id: 1,
@@ -11,7 +13,7 @@ export const products = [
     {
         id: 2,
         name: "Mouse",
-        description: "Gaming",
+        description: "Gamer",
         price: 3799,
         stock: 5,
         category: "input",

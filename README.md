@@ -1,3 +1,17 @@
+# E-commerce
+
+E-commerce es un proyecto sobre una tienda virtual de productos tecnológicos de computadoras hecho en su totalidad con ReactJS. Utiliza Firebase para importar la lista de productos y guardar las ordenes de compra
+
+## Funciones:
+
+En este proyecto puedes ver una lista de todos los productos, filtrar por categoría de producto, entrar al detalle del producto, y agregar productos a tu carrito para crear una orden de compra.
+
+## Herramientas Adicionales Utilizadas:
+
+### "React Bootstrap"
+### "SASS"
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

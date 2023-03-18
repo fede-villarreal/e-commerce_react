@@ -3,24 +3,47 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
     &__img {
-
         width: 1rem;
     }
-
     &__button {
         display: inline;
         margin: 0;
     }
-
+    &__backgroundForm{
+        background-color: $colorFondoNavbar;
+        padding: 1rem 2rem;
+        width: max-content;
+        margin: auto;
+        border-radius: 50%;
+        &--text{
+            width: 60%;
+            margin: 1rem auto;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+    }
+    &__form{
+        color: $colorFondoNavbar;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--input{
+            margin: 0.5rem;
+            padding-left: 0.5rem;
+            width: 60%;
+        }
+        &--button{
+            background-color: $colorFondo;
+        }
+    }
     &__vacio {
         height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        h2{
+        h2 {
             margin: 3rem;
         }
     }
