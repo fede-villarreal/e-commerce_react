@@ -4,6 +4,8 @@ E-commerce es un proyecto sobre una tienda virtual de productos tecnológicos de
 
 ## Funciones:
 
+![image](/funcionamiento_gif.gif)
+
 En este proyecto puedes ver una lista de todos los productos, filtrar por categoría de producto, entrar al detalle del producto, y agregar productos a tu carrito para crear una orden de compra.
 
 ## Herramientas Adicionales Utilizadas:

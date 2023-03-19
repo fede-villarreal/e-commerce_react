@@ -43,7 +43,7 @@ const Cart = () => {
       total: total
     })
       .then((response) => {
-        alert(`Su orden se ha registrado con éxito! \nEl id para hacer el seguimientos de su compra es: ${response.id}. \nGracias por elegirnos!`)
+        alert(`Su orden se ha registrado con éxito! \nEl id para hacer el seguimiento de su compra es: ${response.id}. \nGracias por elegirnos!`)
         updateStock(dataBase)
         clear()
       })
