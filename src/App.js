@@ -6,6 +6,7 @@ import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
 import Cart from './pages/Cart/Cart';
 import CartProvider from './context/CartProvider';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/category/:categoryId" element={<ItemListContainer />} />
             <Route path='/item/:id' element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 
